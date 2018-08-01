@@ -1,0 +1,21 @@
+module.exports = [
+    { value: 10, code: "10" },
+    { value: new Number(10), code: "new Number(10)" },
+    { value: 'overconfidence', code: "overconfidence" },
+    { value: new String('overconfidence'), code: "new String('overconfidence')" },
+    { value: false, code: "false" },
+    { value: new Boolean(false), code: "new Boolean(false)" },
+    { value: undefined, code: "undefined" },
+    { value: null, code: "null" },
+    { value: NaN, code: "NaN" },
+    { value: [1, 2, 3], code: "[1,2,3]" },
+    { value: new Array(1, 2, 3), code: "new Array(1,2,3)" },
+    { value: /a*/gim, code: "/a*/gim" },
+    { value: new RegExp('a*', 'gim'), code: "new RegExp('a*' , 'gim')" },
+    { value: new Date(2029, 1, 1), code: "new Date(2029,1,1)" },
+    { value: { prop: 12345 }, code: "{prop: 12345}" },
+    { value: new Object({ prop: 12345 }), code: "new Object({prop: 12345})" },
+    { value: function(x) { return x; }, code: "function(x){return x;}" },
+    { value: new Function('x', 'return x;'), code: "new Function('x','return x;')" },
+    { value: new Error('something bad happened'), code: "new Error('something bad happened')" }
+];
