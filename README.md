@@ -3,7 +3,9 @@ This module copies functionality of **core-util-is v1.0.2** for ExtendScript.
 
 ## Installation
 
-# Usage
+```npm i ps-util-is```
+
+## Usage
 * As a module for scripts that uses [this](https://github.com/EugenTepin/ps-app-tempalte) template:
 
 ```javascript
@@ -35,7 +37,7 @@ $.writeln(isRegExp(re)); // true
 $.writeln(isFunction(re)); // false
 ```
 ## isArray
-This module will search for **Array.isArray()** polyfill. This polyfill module, for example, [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shim) relies on **__class\_\_** property, and code in this repo relies on **Object.prototype.toString**
+This module will search for **Array.isArray()** polyfill. For example, [ps-scripting-es5shim](https://github.com/EugenTepin/ps-scripting-es5shim) relies on **__class\_\_** property, and code in this repo relies on **Object.prototype.toString**
 
 ## Results of core-util-is v1.0.2
 __Code__ | isArray | isBoolean | isDate | isError | isFunction | isNull | isNullOrUndefined | isNumber | isObject | isPrimitive | isRegExp | isString | isUndefined
@@ -94,4 +96,3 @@ If you want to test on another dataset do the following steps:
 3) **[OPTIONAL]** ```nmp run watch``` just in case (rebuild bundles).
 4) run **./build/test_bundle.jsx** in **ESTK**, or in target app. This will rewrite **./test/data/ps-util-is-result.js**
 5) ```npm test``` see test results in console
-
