@@ -1,6 +1,6 @@
 {
   "name": "ps-util-is",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module copies functionality of core-util-is v1.0.2 for ExtendScript.",
   "main": "index.js",
   "scripts": {

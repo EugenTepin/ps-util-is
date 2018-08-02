@@ -17,7 +17,7 @@ function isNull(arg) {
 exports.isNull = isNull;
 
 function isNullOrUndefined(arg) {
-  return arg == null;
+  return isNull(arg) || isUndefined(arg);
 }
 exports.isNullOrUndefined = isNullOrUndefined;
 
