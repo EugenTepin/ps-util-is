@@ -1,8 +1,8 @@
 __Code__ | isArray | isBoolean | isDate | isError | isFunction | isNull | isNullOrUndefined | isNumber | isObject | isPrimitive | isRegExp | isString | isUndefined
 ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ----------
-__10__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false
+__0__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false
 __new Number(10)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
-__overconfidence__ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false
+____ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false
 __new String('overconfidence')__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
 __false__ | false | __TRUE__ | false | false | false | false | false | false | false | __TRUE__ | false | false | false
 __new Boolean(false)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false

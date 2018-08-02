@@ -1,6 +1,6 @@
 /*
  name: ps-util-is
- version: 1.0.0
+ version: 1.0.1
  description: This module copies functionality of core-util-is v1.0.2 for ExtendScript.
  author: Eugen Tepin
  license: MIT
@@ -25,7 +25,7 @@ function isNull(arg) {
 exports.isNull = isNull;
 
 function isNullOrUndefined(arg) {
-  return arg == null;
+  return isNull(arg) || isUndefined(arg);
 }
 exports.isNullOrUndefined = isNullOrUndefined;
 

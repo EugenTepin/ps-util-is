@@ -18,7 +18,7 @@ function isNull(arg) {
 exports.isNull = isNull;
 
 function isNullOrUndefined(arg) {
-  return arg == null;
+  return isNull(arg) || isUndefined(arg);
 }
 exports.isNullOrUndefined = isNullOrUndefined;
 
@@ -150,9 +150,9 @@ tableFile.close();
 
 },{"./":1,"./test/data/test_data.js":3}],3:[function(require,module,exports){
 module.exports = [
-    { value: 10, code: "10" },
+    { value: 0, code: "0" },
     { value: new Number(10), code: "new Number(10)" },
-    { value: 'overconfidence', code: "overconfidence" },
+    { value: '', code: "" },
     { value: new String('overconfidence'), code: "new String('overconfidence')" },
     { value: false, code: "false" },
     { value: new Boolean(false), code: "new Boolean(false)" },

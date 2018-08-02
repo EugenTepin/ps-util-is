@@ -42,9 +42,9 @@ This module will search for **Array.isArray()** polyfill. For example, [ps-scrip
 ## Results of core-util-is v1.0.2
 __Code__ | isArray | isBoolean | isDate | isError | isFunction | isNull | isNullOrUndefined | isNumber | isObject | isPrimitive | isRegExp | isString | isUndefined
 ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ----------
-__10__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false
+__0__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false
 __new Number(10)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
-__overconfidence__ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false
+____ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false
 __new String('overconfidence')__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
 __false__ | false | __TRUE__ | false | false | false | false | false | false | false | __TRUE__ | false | false | false
 __new Boolean(false)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
@@ -66,9 +66,8 @@ __new Error('something bad happened')__ | false | false | false | __TRUE__ | fal
 
 __Code__ | __isArray__ | __isBoolean__ | __isDate__ | __isError__ | __isFunction__ | __isNull__ | __isNullOrUndefined__ | __isNumber__ | __isObject__ | __isPrimitive__ | __isRegExp__ | __isString__ | __isSymbol__ | __isUndefined__
 ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ----------
-__10__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false | false
+__0__ | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false | false | false
 __new Number(10)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false | false
-__overconfidence__ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false
 __new String('overconfidence')__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false | false
 __false__ | false | __TRUE__ | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false
 __new Boolean(false)__ | false | false | false | false | false | false | false | false | __TRUE__ | false | false | false | false | false
@@ -85,6 +84,7 @@ __new Object({prop: 12345})__ | false | false | false | false | false | false | 
 __function(x){return x;}__ | false | false | false | false | __TRUE__ | false | false | false | false | false | false | false | false | false
 __new Function('x','return x;')__ | false | false | false | false | __TRUE__ | false | false | false | false | false | false | false | false | false
 __new Error('something bad happened')__ | false | false | false | __TRUE__ | false | false | false | false | __TRUE__ | false | false | false | false | false
+____ | false | false | false | false | false | false | false | false | false | __TRUE__ | false | __TRUE__ | false | false
 
 ## Tests
 

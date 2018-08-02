@@ -1,7 +1,7 @@
 module.exports = [
-    { value: 10, code: "10" },
+    { value: 0, code: "0" },
     { value: new Number(10), code: "new Number(10)" },
-    { value: 'overconfidence', code: "overconfidence" },
+    { value: '', code: "" },
     { value: new String('overconfidence'), code: "new String('overconfidence')" },
     { value: false, code: "false" },
     { value: new Boolean(false), code: "new Boolean(false)" },
